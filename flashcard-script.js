@@ -703,47 +703,44 @@ class FlashcardApp {
     }
 
     async loadSampleFiles() {
-        try {
-            // Try to fetch the Data directory listing
-            const response = await fetch('Data/');
-            if (response.ok) {
-                const html = await response.text();
-                // Parse HTML to extract CSV file names
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, 'text/html');
-                const links = doc.querySelectorAll('a[href$=".csv"]');
+        // GitHub Pages doesn't support directory listing, so we use a hardcoded list
+        // of available sample files in the Data folder
+        const availableFiles = ['DBMS.csv', 'DSA.csv', 'OS.csv', 'Python.csv'];
+        const validFiles = [];
 
-                this.sampleFiles = Array.from(links).map(link => {
-                    const href = link.getAttribute('href');
-                    return href.split('/').pop(); // Get just the filename
-                }).filter(filename => filename && filename.endsWith('.csv'));
-            } else {
-                // Fallback: try to load known files individually
-                await this.loadSampleFilesFallback();
-            }
-        } catch (error) {
-            console.log('Could not load directory listing, trying fallback method');
-            await this.loadSampleFilesFallback();
-        }
-    }
-
-    async loadSampleFilesFallback() {
-        // Fallback method: try to load common CSV files
-        const commonFiles = ['mathematics.csv', 'science.csv', 'sample.csv', 'history.csv', 'english.csv', 'biology.csv', 'chemistry.csv', 'physics.csv'];
-        const availableFiles = [];
-
-        for (const file of commonFiles) {
+        // Verify each file exists by making a HEAD request
+        for (const file of availableFiles) {
             try {
                 const response = await fetch(`Data/${file}`, { method: 'HEAD' });
                 if (response.ok) {
-                    availableFiles.push(file);
+                    validFiles.push(file);
                 }
             } catch (error) {
-                // File doesn't exist, skip it
+                console.log(`File ${file} not accessible:`, error);
             }
         }
 
-        this.sampleFiles = availableFiles;
+        this.sampleFiles = validFiles;
+        console.log('Available sample files:', this.sampleFiles);
+    }
+
+    async loadSampleFilesFallback() {
+        // Fallback method: use the same hardcoded list as the main method
+        const availableFiles = ['DBMS.csv', 'DSA.csv', 'OS.csv', 'Python.csv'];
+        const validFiles = [];
+
+        for (const file of availableFiles) {
+            try {
+                const response = await fetch(`Data/${file}`, { method: 'HEAD' });
+                if (response.ok) {
+                    validFiles.push(file);
+                }
+            } catch (error) {
+                console.log(`Fallback: File ${file} not accessible:`, error);
+            }
+        }
+
+        this.sampleFiles = validFiles;
     }
 
     cleanupSampleFilesFromStorage() {
