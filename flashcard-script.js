@@ -704,14 +704,14 @@ class FlashcardApp {
 
     async loadSampleFiles() {
         // GitHub Pages doesn't support directory listing, so we use a hardcoded list
-        // of available sample files in the Data folder
+        // of available sample files in the root directory
         const availableFiles = ['DBMS.csv', 'DSA.csv', 'OS.csv', 'Python.csv'];
         const validFiles = [];
 
         // Verify each file exists by making a HEAD request
         for (const file of availableFiles) {
             try {
-                const response = await fetch(`Data/${file}`, { method: 'HEAD' });
+                const response = await fetch(file, { method: 'HEAD' });
                 if (response.ok) {
                     validFiles.push(file);
                 }
@@ -731,7 +731,7 @@ class FlashcardApp {
 
         for (const file of availableFiles) {
             try {
-                const response = await fetch(`Data/${file}`, { method: 'HEAD' });
+                const response = await fetch(file, { method: 'HEAD' });
                 if (response.ok) {
                     validFiles.push(file);
                 }
@@ -786,8 +786,8 @@ class FlashcardApp {
                     return;
                 }
             } else if (type === 'sample') {
-                // Load from Data folder
-                const response = await fetch(`Data/${fileName}`);
+                // Load from root directory
+                const response = await fetch(fileName);
                 if (!response.ok) {
                     throw new Error('Failed to load sample file');
                 }
@@ -804,7 +804,7 @@ class FlashcardApp {
                 this.currentCardIndex = 0;
 
                 // Sample files should never be saved to localStorage
-                // They are loaded fresh from the Data folder each time
+                // They are loaded fresh from the root directory each time
 
                 this.showFlashcards();
                 // Wait for the transition to complete before loading card
