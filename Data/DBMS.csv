@@ -1,0 +1,276 @@
+question,answer
+What is a Database?,A structured collection of data stored and accessed electronically.
+What is a Database Management System (DBMS)?,"Software that interacts with end-users, applications, and the database to capture and analyse data."
+What are the main functions of a DBMS?,"Data storage, retrieval, update, and administration of databases."
+What is a Relational Database?,A database structured to recognize relations among stored items of information.
+Who proposed the relational model?,Edgar F. Codd in 1970.
+What is SQL?,"Structured Query Language, used for managing and manipulating relational databases."
+What is a Table in a database?,A collection of related data entries consisting of rows and columns.
+Define a Primary Key.,A unique identifier for a record in a table.
+What is a Foreign Key?,An attribute that creates a relationship between two tables.
+What is a Candidate Key?,"An attribute, or a set of attributes, that can uniquely identify a tuple."
+What is a Composite Key?,A key composed of two or more attributes that uniquely identify a record.
+Define Normalization.,The process of organizing data to reduce redundancy and improve integrity.
+What is Denormalization?,The process of combining normalized tables to improve read performance. 1
+Explain ACID properties.,"Atomicity, Consistency, Isolation, Durability—ensure reliable transactions."
+What is a Transaction?,A unit of work performed within a database management system.
+What is a Schema?,The structure that defines the organization of data in a database.
+What is an Instance?,The actual content of the database at a particular point in time.
+Define Data Independence.,The capacity to change the schema at one level without altering the schema at the next higher level.
+What is a Data Model?,An abstract model that organizes data elements and standardizes their relationships.
+Name different types of Data Models.,"Hierarchical, Network, Relational, Object-oriented."
+What is the Hierarchical Data Model?,Data is organized into a tree-like structure.
+What is the Network Data Model?,"Data is organized in a graph, allowing multiple parent-child relationships."
+What is the Relational Data Model?,Data is organized into tables (relations) of rows and columns.
+What is an Object-oriented Data Model?,"Data is represented in the form of objects, as in object-oriented programming."
+What is an Entity?,An object that exists and is distinguishable from other objects.
+What is an Attribute?,A property or characteristic of an entity. 2
+Define a Relationship in DBMS.,An association among two or more entities.
+What is an Entity-Relationship (ER) Diagram?,A visual representation of entities and their relationships.
+What is Cardinality in ER diagrams?,The number of instances of one entity that can be associated with instances of another entity.
+What is a Weak Entity?,An entity that cannot be uniquely identified by its attributes alone.
+What is a Strong Entity?,An entity that can be uniquely identified by its attributes.
+Define Referential Integrity.,Ensures that foreign key values in a table correspond to primary key values in another table.
+What is a View in DBMS?,A virtual table based on the result set of an SQL statement.
+What is an Index?,A database object that improves the speed of data retrieval.
+What is a Clustered Index?,An index that determines the physical order of data in a table.
+What is a Non-Clustered Index?,An index that does not alter the physical order of data in a table.
+Define a Stored Procedure.,A set of SQL statements that can be stored and executed on the database server.
+What is a Trigger?,A procedure that automatically executes in response to certain events on a table.
+What is a Cursor?,"A database object used to retrieve, manipulate, and navigate through a result set row by row. 3"
+What is Data Warehousing?,The process of collecting and managing data from various sources for analysis and reporting.
+What is OLTP?,Online Transaction Processing—manages transaction-oriented applications.
+What is OLAP?,Online Analytical Processing—supports complex analysis and queries on large volumes of data.
+What is a Data Dictionary?,"A centralized repository of information about data, such as meaning, relationships, and origin."
+What is Data Mining?,The process of discovering patterns and knowledge from large amounts of data.
+What is a Database Management System (DBMS)?,"A software system that enables users to define, create, maintain, and control access to databases."
+What are the primary functions of a DBMS?,"Data storage, retrieval, update, and administration of databases."
+What is a Relational Database Management System (RDBMS)?,A type of DBMS that stores data in tables (relations) and allows for relationships between tables using keys.
+How does a DBMS differ from an RDBMS?,DBMS manages data as files without enforcing relationships; RDBMS uses tables with enforced relationships through foreign keys.
+Can you provide examples of DBMS and RDBMS?,"DBMS: File systems, XML; RDBMS: MySQL, Oracle, SQL Server."
+What are the advantages of using an RDBMS over a traditional DBMS?,"Data integrity, reduced redundancy, support for complex queries, and enforcement of relationships. 4"
+"What is data redundancy, and how do DBMS and RDBMS handle it?",Data redundancy is the unnecessary repetition of data. RDBMS minimizes redundancy through normalization; DBMS may not effectively address redundancy.
+Explain data integrity in the context of DBMS.,Ensuring accuracy and consistency of data over its lifecycle.
+How do RDBMS enforce data integrity?,"Through constraints like primary keys, foreign keys, and unique constraints."
+What is a Primary Key?,A unique identifier for records in a table; no two rows can have the same primary key value.
+What is a Foreign Key?,"A field in one table that uniquely identifies a row in another table, establishing a relationship between the two tables."
+Define a Candidate Key.,"An attribute, or set of attributes, that can uniquely identify a tuple in a table; a table can have multiple candidate keys."
+What is a Composite Key?,A primary key composed of two or more columns to uniquely identify a record.
+What is a database schema?,The logical structure that defines the organization of data in a database.
+Explain the concept of indexing.,A data structure that improves the speed of data retrieval operations on a database table.
+What is a clustered index?,An index that determines the physical order of data in a table; there can be only one clustered index per table.
+Define a non-clustered index.,An index that does not alter the physical order of the table and uses a separate structure to store pointers to data. 5
+What is a view in DBMS?,A virtual table based on the result set of an SQL statement.
+How does a view differ from a table?,A view is a virtual table that does not store data physically; a table stores actual data in the database.
+What is an Entity-Relationship (ER) Model?,"A conceptual framework used to describe the structure of a database, detailing entities, attributes, and relationships."
+What is an Entity in the ER Model?,"An entity is an object or concept that can have data stored about it in a database, such as a person, place, or event."
+What are attributes in an ER Model?,"Attributes define the properties of an entity, such as a student's name, roll number, or course."
+What is a primary key in the ER Model?,"A primary key is a unique identifier for each record in a table, ensuring that no two records have the same value."
+What is a foreign key in the ER Model?,"A foreign key is an attribute in one table that establishes a link to the primary key of another table, ensuring referential integrity."
+What is a relationship in the ER Model?,"A relationship represents the association between two or more entities, such as a ""Student"" enrolling in a ""Course."""
+Define cardinality in the context of the ER Model.,"Cardinality specifies the number of instances of one entity that can be associated with instances of another entity (e.g., one-to-one, one-to- many)."
+What is a weak entity?,A weak entity is an entity that cannot exist without a related strong entity and does not have sufficient attributes to be uniquely identified on its own.
+What is a composite attribute?,"A composite attribute is an attribute that can be divided into smaller sub-parts, such as a full name being divided into first name and last name. 6"
+What is a derived attribute?,"A derived attribute is an attribute whose value is calculated from other attributes, such as ""Age"" being derived from ""Date of Birth."""
+What is an aggregation in an ER Model?,"Aggregation is an abstraction that treats relationships as higher- level entities, used when relationships themselves need to participate in another relationship."
+What is generalization in an ER Model?,Generalization is the process of extracting common attributes from multiple entity types and creating a higher-level entity.
+What is specialization in an ER Model?,Specialization is the process of creating sub-entities from a higher- level entity based on distinguishing characteristics.
+What is an extended ER Model (EER)?,"An extended ER Model (EER) includes additional concepts like generalization, specialization, and aggregation to better represent real-world scenarios."
+What is SQL?,SQL (Structured Query Language) is a language used to manage and manipulate relational databases.
+What are the different types of SQL commands?,"SQL commands are classified into DDL (Data Definition Language), DML (Data Manipulation Language), DCL (Data Control Language), and TCL (Transaction Control Language)."
+What is DDL in SQL?,"Data Definition Language (DDL) includes commands like CREATE, ALTER, and DROP, which define and modify database structures."
+What is DML in SQL?,"Data Manipulation Language (DML) includes commands like SELECT, INSERT, UPDATE, and DELETE, which manipulate data in tables."
+What is DCL in SQL?,"Data Control Language (DCL) includes commands like GRANT and REVOKE, which control access to database objects."
+What is TCL in SQL?,"Transaction Control Language (TCL) includes commands like 7 COMMIT, ROLLBACK, and SAVEPOINT, which manage transactions in a database."
+What is the difference between WHERE and HAVING in SQL?,"WHERE is used to filter records before grouping, while HAVING is used to filter records after grouping using aggregate functions."
+What is the difference between INNER JOIN and OUTER JOIN?,"INNER JOIN returns only matching rows from both tables, whereas OUTER JOIN returns matching rows along with unmatched rows from one or both tables."
+What is a self-join in SQL?,A self-join is a join where a table is joined with itself to compare rows within the same table.
+What is a cross join?,"A cross join returns the Cartesian product of two tables, meaning every row from the first table is paired with every row from the second table."
+What is the difference between UNION and UNION ALL?,"UNION removes duplicate rows from the result set, while UNION ALL includes all rows, including duplicates."
+What is an index in SQL?,An index is a database object that improves the speed of data retrieval operations by maintaining a sorted structure.
+"What is the difference between DELETE, TRUNCATE, and DROP?","DELETE removes specific rows and can be rolled back, TRUNCATE removes all rows without logging individual row deletions, and DROP deletes the table structure entirely."
+What is generalization in ER modeling?,Generalization is the process of combining multiple lower-level entity sets into a higher-level entity set based on common attributes.
+What is specialization in ER modeling?,Specialization is the process of dividing a higher-level entity into two or more lower-level entities based on distinguishing characteristics.
+What is aggregation in ER modeling?,"Aggregation is an abstraction in which a relationship between entities is treated as an entity itself, allowing it to participate in another relationship. 8"
+What is an Extended ER Model (EER)?,"An Extended ER Model (EER) extends the basic ER model by including concepts like specialization, generalization, and aggregation to better represent complex real-world scenarios."
+What is SQL?,"SQL (Structured Query Language) is a language used to manage, manipulate, and query relational databases."
+What are the different types of SQL commands?,"SQL commands are classified into: DDL (Data Definition Language): CREATE, ALTER, DROP. • DML (Data Manipulation Language): SELECT, INSERT, UPDATE, • DELETE. DCL (Data Control Language): GRANT, REVOKE. • TCL (Transaction Control Language): COMMIT, ROLLBACK, • SAVEPOINT."
+What is a SELECT statement in SQL?,The SELECT statement is used to retrieve data from a database table based on specified conditions.
+What is a WHERE clause in SQL?,The WHERE clause is used to filter records based on a specified condition in a query.
+What is the difference between WHERE and HAVING?,WHERE is used to filter rows before aggregation. • HAVING is used to filter results after aggregation with GROUP BY. •
+What is a JOIN in SQL?,A JOIN is used to combine records from two or more tables based on a related column.
+What are the different types of JOINs in SQL?,INNER JOIN: Returns records with matching values in both tables. • LEFT JOIN: Returns all records from the left table and matching • records from the right table. RIGHT JOIN: Returns all records from the right table and matching • records from the left table. 9 FULL OUTER JOIN: Returns all records when there is a match in either • table. SELF JOIN: A table joins itself. • CROSS JOIN: Returns the Cartesian product of two tables. •
+What is the difference between UNION and UNION ALL?,UNION: Combines results from multiple SELECT statements and • removes duplicates. UNION ALL: Combines results but keeps duplicates. •
+"What is the difference between DELETE, TRUNCATE, and DROP?","DELETE: Removes specific records and can be rolled back. • TRUNCATE: Removes all records but retains table structure; cannot be • rolled back. DROP: Deletes the entire table, including structure. •"
+What is a subquery in SQL?,A subquery is a query nested within another query to retrieve data dynamically.
+What are the types of subqueries?,Single-row subquery: Returns only one row. • Multi-row subquery: Returns multiple rows. • Correlated subquery: References outer query columns for each row. • Nested subquery: A subquery inside another subquery. •
+What is a stored procedure in SQL?,A stored procedure is a precompiled collection of SQL statements stored in the database to perform repetitive tasks efficiently.
+What is a trigger in SQL?,"A trigger is an event-driven stored procedure that automatically executes in response to specific actions on a table, such as INSERT, UPDATE, or DELETE."
+What is indexing in SQL?,Indexing is a technique that improves query performance by organizing data in a structured way to speed up searches. 10
+What is a clustered index?,A clustered index sorts and stores data rows in a table based on key values; only one clustered index can exist per table.
+What is a non-clustered index?,A non-clustered index maintains a separate structure for storing pointers to data and does not affect physical row ordering.
+What is a view in SQL?,"A view is a virtual table based on the result of an SQL query, providing a simplified representation of data without storing it physically."
+What is the difference between a view and a table?,"A table physically stores data, whereas a view is a virtual table that represents the result of an SQL query without storing data itself."
+What is a materialized view?,A materialized view is a database object that stores the result of a query physically and updates periodically for better performance.
+What is a transaction in SQL?,"A transaction is a sequence of database operations executed as a single unit of work, ensuring data integrity."
+What are the ACID properties of transactions?,Atomicity: Ensures a transaction is either fully completed or not • executed at all. Consistency: Ensures the database remains in a valid state before • and after the transaction. Isolation: Ensures transactions do not interfere with each other. • Durability: Ensures committed transactions remain stored • permanently.
+What is a deadlock in SQL?,"A deadlock occurs when two or more transactions hold resources the other needs, preventing further execution."
+How can deadlocks be prevented?,"By using techniques like timeout, resource ordering, deadlock detection, and transaction prioritization. 11"
+What is a lock in SQL?,A lock is a mechanism that controls concurrent access to database resources to prevent conflicts.
+What are the types of locks in SQL?,Shared lock: Allows multiple transactions to read a resource but not • modify it. Exclusive lock: Allows only one transaction to modify a resource. •
+What is the difference between pessimistic and optimistic locking?,Pessimistic locking: Prevents conflicts by locking data before • accessing it. Optimistic locking: Assumes minimal conflicts and checks for changes • before committing updates.
+What are the levels of data abstraction in DBMS?,The three levels of data abstraction are: Physical Level: Describes how data is stored. • Logical Level: Defines the structure and relationships in the database. • View Level: Provides different user-specific views of the data. •
+What is the difference between a schema and an instance in DBMS?,"Schema: The overall design of the database, which remains • unchanged. Instance: The actual data stored in the database at a specific moment • in time."
+What is normalization in DBMS?,Normalization is a process of organizing data to eliminate redundancy and improve data integrity by dividing large tables into smaller ones.
+What are the different normal forms in DBMS?,"The major normal forms are: 12 1NF (First Normal Form): Eliminates duplicate columns and ensures • atomicity of data. 2NF (Second Normal Form): Removes partial dependencies (all non- • key attributes must depend on the whole primary key). 3NF (Third Normal Form): Eliminates transitive dependencies. • BCNF (Boyce-Codd Normal Form): A stronger version of 3NF, ensuring • no anomalies exist due to functional dependencies."
+What is denormalization?,"Denormalization is the process of merging tables to reduce joins and improve performance, at the cost of some data redundancy."
+What is functional dependency in DBMS?,"A functional dependency exists when the value of one attribute uniquely determines another attribute (e.g., Roll_No → Student_Name)."
+What is the difference between primary key and candidate key?,"Primary Key: The main key chosen to uniquely identify records in a • table. Candidate Key: A set of attributes that can uniquely identify records, • but only one is chosen as the primary key."
+What is a surrogate key?,"A surrogate key is a system-generated unique identifier for a record, usually an auto-incremented number."
+What is a foreign key constraint?,A foreign key constraint ensures referential integrity by linking a column in one table to the primary key of another table.
+What is an index in DBMS?,An index is a data structure that improves the speed of data retrieval operations in a database.
+What is the difference between a clustered and non-clustered index?,Clustered Index: Determines the physical order of data in the table • and allows only one per table. Non-Clustered Index: Stores pointers to data rather than sorting it • physically and allows multiple per table. 13
+What are the advantages of using indexes?,Speeds up search queries. • Reduces disk I/O. • Enhances database performance. •
+What are the disadvantages of using indexes?,"Requires additional storage space. • Slows down write operations (INSERT, UPDATE, DELETE). •"
+What is a database transaction?,A database transaction is a sequence of operations performed as a single logical unit of work.
+What is the significance of the COMMIT and ROLLBACK commands?,COMMIT: Saves all changes made during a transaction permanently. • ROLLBACK: Undoes all changes made during a transaction. •
+What is concurrency control in DBMS?,Concurrency control ensures multiple transactions execute simultaneously without causing inconsistencies.
+What is a deadlock in DBMS?,"A deadlock occurs when two or more transactions hold resources the others need, preventing further execution."
+What are the different ways to prevent deadlocks?,Resource ordering. • Timeout mechanisms. • Deadlock detection and recovery. •
+What are the different types of database users?,End Users: Access data for queries and reports. • Database Administrators (DBAs): Manage database security and • performance. 14 Application Programmers: Develop applications that interact with • databases. System Analysts: Design database structure. •
+What is a stored procedure?,A stored procedure is a precompiled set of SQL statements stored in the database for repeated execution.
+What are the advantages of stored procedures?,Improves performance. • Reduces network traffic. • Enhances security by restricting direct table access. •
+What is a trigger in SQL?,"A trigger is an event-driven procedure that automatically executes before or after an INSERT, UPDATE, or DELETE operation."
+What is a view in SQL?,"A view is a virtual table based on the result of a SQL query, which does not store data physically."
+What is the difference between a view and a materialized view?,View: A dynamically generated virtual table that retrieves data when • queried. Materialized View: Stores the query result physically and refreshes • periodically.
+What is an ACID property in DBMS?,Atomicity: Ensures transactions are fully completed or not executed at • all. Consistency: Maintains database integrity. • Isolation: Ensures concurrent transactions do not affect each other. • Durability: Ensures committed transactions persist even after system • failures.
+What is an OLTP system?,"Online Transaction Processing (OLTP) systems manage real-time transaction processing, such as banking applications. 15"
+What is an OLAP system?,Online Analytical Processing (OLAP) systems analyze historical data for decision-making and reporting.
+What is the difference between OLTP and OLAP?,OLTP: Handles real-time transactions with frequent updates. • OLAP: Focuses on complex queries and data analysis with less • frequent updates.
+What is a NoSQL database?,A NoSQL database is a non-relational database designed to handle large-scale unstructured or semi-structured data.
+What are the types of NoSQL databases?,"Document-based: Stores data as JSON or BSON (e.g., MongoDB). • Key-Value: Uses key-value pairs (e.g., Redis). • Column-family: Stores data in columns instead of rows (e.g., • Cassandra). Graph-based: Represents data as nodes and edges (e.g., Neo4j). •"
+What is Referential Integrity?,Referential Integrity ensures that foreign key values in one table match primary key values in another table to maintain data consistency.
+What is the difference between Data Redundancy and Data Inconsistency?,Data Redundancy: The duplication of data across multiple locations. • Data Inconsistency: When the same data appears with different • values in multiple places.
+What is the purpose of a Data Dictionary in DBMS?,"A data dictionary stores metadata (data about data), including information about tables, columns, data types, and constraints."
+What is the difference between OLAP and Data Warehousing?,OLAP (Online Analytical Processing): A technology used for complex • queries and data analysis. 16 Data Warehousing: A system used to store large volumes of historical • data for analytical purposes.
+What are the different types of OLAP systems?,MOLAP (Multidimensional OLAP): Uses a multidimensional data • structure for quick analysis. ROLAP (Relational OLAP): Uses relational databases for analysis. • HOLAP (Hybrid OLAP): Combines MOLAP and ROLAP for performance • and flexibility.
+What is the difference between a Data Warehouse and a Database?,Database: Designed for transaction processing (OLTP) with real-time • operations. Data Warehouse: Optimized for analytical processing (OLAP) and • historical data storage.
+What is the difference between Star and Snowflake Schema?,Star Schema: A simple structure with a central fact table connected to • multiple dimension tables. Snowflake Schema: A more normalized version of Star Schema where • dimension tables are further divided into sub-dimensions.
+What is Data Mining?,"Data Mining is the process of discovering patterns, trends, and useful insights from large datasets."
+What are the different types of Data Mining techniques?,Classification • Clustering • Association Rule Learning • Regression • Anomaly Detection •
+What is a Fact Table in Data Warehousing?,A fact table stores quantitative data (measurable facts) and is linked to dimension tables. 17
+What is a Dimension Table in Data Warehousing?,A dimension table stores descriptive information (attributes) related to facts for analysis.
+What is ETL in Data Warehousing?,"ETL (Extract, Transform, Load) is the process of extracting data from various sources, transforming it into a suitable format, and loading it into a data warehouse."
+What is the difference between Data Cleaning and Data Transformation?,Data Cleaning: Identifies and removes errors or inconsistencies in • data. Data Transformation: Converts data into a suitable format for • analysis.
+"What is a NoSQL database, and when is it used?","A NoSQL database is a non-relational database used for handling large-scale, unstructured, or semi-structured data, such as in big data applications."
+What are the different types of NoSQL databases?,"Key-Value Stores (e.g., Redis, DynamoDB) • Document Stores (e.g., MongoDB, CouchDB) • Column-Family Stores (e.g., Cassandra, HBase) • Graph Databases (e.g., Neo4j, ArangoDB) •"
+What is CAP Theorem in NoSQL databases?,"CAP Theorem states that a distributed database can only provide two out of three guarantees: Consistency, Availability, and Partition Tolerance at a given time."
+What is BASE property in NoSQL?,"Basically Available: System guarantees availability even in failure • conditions. Soft State: State may change over time without immediate • consistency. Eventual Consistency: Data becomes consistent eventually, rather • than instantly. 18"
+What is Sharding in NoSQL?,Sharding is a technique of partitioning large datasets across multiple servers to improve scalability and performance.
+What is a Graph Database?,"A Graph Database stores data as nodes and edges, making it ideal for representing relationships (e.g., social networks, fraud detection)."
+What are the advantages of Graph Databases?,"Efficient handling of complex relationships. • Faster querying of connected data. • Ideal for social networks, recommendation systems, and fraud • detection."
+What is a Non-Clustered Index?,"A non-clustered index creates a separate structure for storing pointers to the actual data in a table, allowing multiple indexes per table."
+What is a B-Tree Index in DBMS?,"A B-Tree Index is a balanced tree structure used to optimize searches, insertions, and deletions efficiently."
+What is a Hash Index in DBMS?,A Hash Index uses a hash function to map keys to specific locations in memory for quick retrieval.
+What is the difference between Clustered and Non-Clustered Indexes?,Clustered Index: Determines the physical storage order of records. • Non-Clustered Index: Stores pointers to records without affecting their • physical order.
+What is Query Optimization in DBMS?,Query Optimization is the process of choosing the most efficient way to execute a SQL query for performance improvement.
+What is a Query Execution Plan?,"A Query Execution Plan is a step-by-step breakdown of how a database will execute a query, generated by the optimizer. 19"
+What is a Materialized View in DBMS?,A Materialized View is a stored query result that improves query performance by precomputing and storing data.
+What is the difference between a View and a Materialized View?,View: A virtual table representing a stored query that retrieves fresh • data on access. Materialized View: Stores query results physically for faster access. •
+What is Normalization in DBMS?,Normalization is a process of structuring a database to reduce redundancy and improve data integrity.
+What are the different Normal Forms in DBMS?,1NF (First Normal Form): Eliminates duplicate columns and ensures • atomicity. 2NF (Second Normal Form): Ensures that all non-key attributes are • fully dependent on the primary key. 3NF (Third Normal Form): Removes transitive dependencies. • BCNF (Boyce-Codd Normal Form): Ensures strict dependency on • candidate keys.
+What is Denormalization in DBMS?,Denormalization is the process of combining tables to optimize read performance at the cost of redundancy.
+What is Functional Dependency?,"A Functional Dependency is a relationship where one attribute uniquely determines another (e.g., A → B means B is functionally dependent on A)."
+What is Multivalued Dependency?,A Multivalued Dependency occurs when one attribute determines multiple independent values of another attribute.
+What is a Surrogate Key in DBMS?,A Surrogate Key is an artificial key (usually an auto-incremented ID) used as a unique identifier for records.
+What is the difference between Primary Key and Unique Key?,20 Primary Key: Uniquely identifies each record and cannot be null. • Unique Key: Ensures uniqueness but allows null values. •
+What is a Foreign Key in DBMS?,A Foreign Key is a column that establishes a relationship between two tables by referencing the Primary Key of another table.
+What is Cascading in DBMS?,"Cascading defines the behavior when a referenced key is updated or deleted (e.g., CASCADE, SET NULL, SET DEFAULT, RESTRICT)."
+What are ACID properties in DBMS?,Atomicity: Ensures a transaction is all-or-nothing. • Consistency: Maintains database integrity. • Isolation: Keeps transactions independent. • Durability: Ensures committed changes persist. •
+What is a Savepoint in DBMS?,A Savepoint allows partial rollback of a transaction to a specific point.
+What is the difference between Rollback and Commit?,Rollback: Reverts changes of an uncommitted transaction. • Commit: Saves all changes permanently. •
+What is Two-Phase Commit Protocol (2PC)?,A distributed transaction protocol ensuring either complete success or failure across multiple databases.
+What is the difference between Strong and Weak Entity?,Strong Entity: Has a primary key and exists independently. • Weak Entity: Lacks a primary key and relies on a strong entity. •
+What is a Deadlock in DBMS?,A Deadlock occurs when two or more transactions wait indefinitely for each other to release resources.
+What are Deadlock Prevention techniques?,21 Timeouts (transactions abort after waiting too long). • Wait-Die and Wound-Wait Schemes. • Resource Ordering. •
+What is the difference between Serial and Concurrent Execution?,"Serial Execution: Transactions are executed one after another. • Concurrent Execution: Transactions are executed simultaneously, • improving performance."
+What is Multiversion Concurrency Control (MVCC)?,"MVCC allows multiple versions of a record to exist, improving transaction isolation and read consistency."
+What is a Shadow Paging in DBMS?,A recovery technique that maintains old and new copies of data for transaction management.
+What is a Checkpoint in DBMS?,A Checkpoint saves the database state to reduce recovery time in case of failure.
+What is Write-Ahead Logging (WAL)?,A logging mechanism where changes are written to a log before committing to the database to ensure durability.
+What is the difference between Pessimistic and Optimistic Concurrency Control?,Pessimistic Control: Locks data to prevent conflicts. • Optimistic Control: Allows transactions to proceed and resolves • conflicts during commit.
+What is the Difference Between Cartesian Product and Join in DBMS?,"Cartesian Product (×): Returns all possible combinations of tuples • from two relations. Join: Filters the Cartesian product based on a condition, reducing the • number of tuples. 22"
+What is an Inner Join in SQL?,An Inner Join returns only the rows where there is a match between columns in both tables.
+What is an Outer Join in SQL?,"An Outer Join returns all rows from one or both tables, filling missing values with NULLs where necessary."
+"What is the Difference Between Left, Right, and Full Outer Join?","Left Outer Join: Returns all records from the left table and matching • records from the right table. Right Outer Join: Returns all records from the right table and matching • records from the left table. Full Outer Join: Returns all records from both tables, with NULLs • where there is no match."
+What is a Self Join?,A Self Join is when a table is joined with itself to compare rows within the same table.
+What is an Equi Join?,A join that uses only equality conditions between columns.
+What is a Natural Join?,A join that automatically matches columns with the same name and data type from both tables.
+What is a Cross Join?,A join that produces the Cartesian product of two tables without a condition.
+What is the Difference Between SQL and NoSQL Databases?,"SQL Databases: Structured, relational, use tables, and follow ACID • properties. NoSQL Databases: Non-relational, flexible schema, and often follow • BASE properties."
+What is the Difference Between OLAP and OLTP?,"23 OLTP (Online Transaction Processing): Handles real-time transactions • (e.g., banking). OLAP (Online Analytical Processing): Used for data analysis and • decision-making."
+What is Data Warehousing?,"Data Warehousing is a process of collecting, storing, and managing large amounts of data for analysis."
+What is the Difference Between Star Schema and Snowflake Schema?,"Star Schema: Simple, denormalized structure with fact and dimension • tables. Snowflake Schema: Normalized structure, reducing redundancy in • dimension tables."
+What is the Difference Between OLAP Cube and Data Mart?,"OLAP Cube: A multidimensional structure used for quick data analysis. • Data Mart: A subset of a data warehouse, focused on a specific • business domain."
+What is a Slowly Changing Dimension (SCD)?,"A dimension in a data warehouse that changes over time, requiring strategies for handling historical data."
+What are the Types of Slowly Changing Dimensions (SCD)?,Type 0: No changes allowed. • Type 1: Overwrites old data. • Type 2: Creates a new row for changes. • Type 3: Stores history in separate columns. •
+What is Data Lake?,A large storage repository that holds raw data in various formats for future analysis.
+What is Data Governance?,"A framework for managing data availability, usability, security, and integrity in an organization. 24"
+What is ETL?,"Extract, Transform, Load—A process of moving data from multiple sources into a data warehouse."
+"What is ELT (Extract, Load, Transform)?","A variation of ETL where data is loaded first, then transformed within the target system."
+What is Data Virtualization?,A technique that allows access to data from multiple sources without physical movement or duplication.
+What is the Difference Between Data Cleaning and Data Transformation?,"Data Cleaning: Removing or correcting incorrect, incomplete, or • duplicate data. Data Transformation: Converting data into the required format or • structure."
+What is Master Data Management (MDM)?,"A method for ensuring the accuracy, consistency, and governance of key business data."
+What is a Data Pipeline?,A series of data processing steps that move and transform data from source to destination.
+What is the Difference Between Data Streaming and Batch Processing?,Data Streaming: Processes data in real-time. • Batch Processing: Processes data in scheduled batches. •
+What is the Difference Between a Data Warehouse and a Data Lake?,"Data Warehouse: Structured, optimized for reporting and analysis. • Data Lake: Stores raw, unstructured, and structured data for future • processing. 25"
+What is Data Sharding?,"A technique for partitioning a database into smaller, faster, and more manageable parts."
+What is Data Replication?,Copying data across multiple servers to enhance performance and availability.
+What is the CAP Theorem?,"A principle stating that a distributed system can guarantee only two out of three: Consistency, Availability, and Partition Tolerance."
+What is the BASE Model in NoSQL Databases?,Basically Available: System is available most of the time. • Soft State: The state may change over time. • Eventual Consistency: Ensures data consistency eventually. •
+What is a Graph Database?,A NoSQL database that uses nodes and edges to represent and store relationships efficiently.
+What is Polyglot Persistence?,Using different types of databases for different types of workloads in a single application.
+What is Event Sourcing?,A method where state changes are stored as a sequence of events instead of updating records.
+What is CQRS (Command Query Responsibility Segregation)?,A design pattern where write (command) and read (query) operations are handled separately for scalability.
+What is a Blockchain Database?,"A decentralized, immutable ledger that records transactions in a secure and verifiable manner."
+What is the Difference Between Data Integrity and Data Security?,Data Integrity: Ensures accuracy and consistency of data. • Data Security: Protects data from unauthorized access or corruption. • 26
+What is the Role of an Index in Query Performance?,Indexes improve query performance by reducing the time required to locate data.
+What is a Full-Text Search Index?,A specialized index that allows fast text-based searching within documents.
+What is the Difference Between Vertical and Horizontal Scaling in Databases?,"Vertical Scaling: Adding more power (CPU, RAM) to a single server. • Horizontal Scaling: Adding more servers to distribute the load. •"
+What is the Purpose of Database Partitioning?,"To split a large table into smaller, more manageable parts for better performance and scalability."
+What is a Hybrid Database?,A database that combines SQL and NoSQL capabilities to handle diverse workloads.
+What is a Hybrid Database?,A database that combines SQL and NoSQL capabilities to handle diverse workloads.
+What is the difference between OLTP and OLAP?,"OLTP (Online Transaction Processing) is optimized for transactional workloads, while OLAP (Online Analytical Processing) is designed for complex analytical queries."
+Define NoSQL databases.,"NoSQL databases are non-relational databases designed for scalability and flexibility, handling unstructured and semi-structured data."
+What are the different types of NoSQL databases?,"Key-Value Store, Document Store, Column-Family Store, and Graph Database."
+What is eventual consistency in NoSQL?,"A consistency model ensuring that, given enough time, all replicas of data will become consistent. 27"
+Explain ACID properties in database transactions.,"Atomicity, Consistency, Isolation, and Durability ensure reliable transaction processing."
+What is BASE in NoSQL databases?,"BASE (Basically Available, Soft state, Eventual consistency) is an alternative to ACID for highly distributed systems."
+What is the CAP theorem?,"It states that a distributed system can only guarantee two out of three: Consistency, Availability, and Partition Tolerance."
+Differentiate between vertical and horizontal scaling in databases.,"Vertical scaling enhances a single server’s capacity, whereas horizontal scaling distributes data across multiple servers."
+What is sharding in databases?,A database partitioning technique that distributes data across multiple servers to improve performance and scalability.
+Explain the difference between RANK() and DENSE_RANK() functions.,RANK() assigns ranks with gaps for ties; DENSE_RANK() assigns consecutive ranks without gaps.
+What is the purpose of the GROUPING SETS clause?,"GROUPING SETS allows multiple groupings in a single query, providing more control over aggregations."
+How do you handle NULL values in aggregate functions?,Aggregate functions like SUM() and AVG() ignore NULLs; functions like COUNT() can include or exclude NULLs based on syntax.
+What is a phantom read in database transactions?,A phantom read occurs when a transaction reads new rows that were committed by another transaction after the initial read.
+Explain the concept of a two-phase commit protocol.,A protocol that ensures all participating databases in a distributed transaction agree to commit or rollback changes.
+What is optimistic concurrency control?,A concurrency control method that assumes multiple transactions 28 can complete without affecting each other and checks for conflicts before committing.
+Describe the difference between shared locks and exclusive locks.,Shared locks allow multiple transactions to read a resource; exclusive locks allow only one transaction to modify a resource.
+How does a database detect deadlocks?,Databases detect deadlocks by constructing a wait-for graph and checking for cycles.
+What is the purpose of a transaction log?,A transaction log records all transactions and database modifications for recovery purposes.
+Explain the concept of isolation levels in transactions.,Isolation levels define the degree to which a transaction must be isolated from data modifications made by other transactions.
+What is write-ahead logging?,A process where changes are first recorded in a log before being applied to the database to ensure durability.
+Describe the difference between pessimistic and optimistic locking.,Pessimistic locking locks resources to prevent conflicts; optimistic locking allows transactions to proceed and checks for conflicts before committing.
+How can deadlocks be prevented in a database system?,"Deadlocks can be prevented by implementing proper locking hierarchy, timeout mechanisms, or deadlock detection algorithms."
+What is a B-Tree index?,"A balanced tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time."
+Explain the difference between clustered and non-clustered indexes.,A clustered index determines the physical order of data in a table; a non-clustered index is a separate structure that points to the data. 29
+What is a hash index?,An index that uses a hash function to map keys to locations in a hash table for quick data retrieval.
+Describe the concept of index fragmentation.,"Index fragmentation occurs when the logical order of pages does not match the physical order, leading to inefficient data retrieval."
+How does a bitmap index work?,A bitmap index uses bitmaps for each distinct value and is efficient for columns with a low cardinality of distinct values.
+What is the purpose of a covering index?,"A covering index includes all the columns needed to satisfy a query, eliminating the need to access the table data."
+Explain the difference between dense and sparse indexes.,A dense index has an index entry for every search key value; a sparse index has index entries for only some of the search key values.
+What is the role of fill factor in index creation?,"Fill factor determines the percentage of space on each leaf-level page to be filled with data, reserving space for future growth."
+Describe the concept of index selectivity.,"Index selectivity is the measure of how well an index can distinguish between rows, calculated as the ratio of distinct key values to the total number of rows."
+How does partitioned indexing improve query performance?,"Partitioned indexing divides an index into smaller, more manageable pieces, allowing queries to scan only relevant partitions and improving performance."
+"What is the difference between TRUNCATE, DELETE, and DROP?",Command Deletes Rows Can Rollback? Removes Table? DELETE Yes (selected rows) ✅ Yes ❌ No TRUNCATE Yes (all rows) ❌ No ❌ No DROP Yes (entire table) ❌ No ✅ Yes 30
+How does a DBMS ensure concurrency control?,"Through locking mechanisms, like two-phase locking (2PL) • Timestamp ordering • Isolation levels (Read Uncommitted, Read Committed, Repeatable • Read, Serializable) 31"
