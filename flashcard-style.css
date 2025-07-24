@@ -1024,11 +1024,11 @@ border-color: var(--border-color);
   }
 
   .file-showcase-bar.expanded {
-    max-height: 400px;
+    max-height: 200px;
   }
 
   .file-showcase-bar.expanded~main {
-    margin-top: 470px;
+    margin-top: 200px;
   }
 
   .file-item {
