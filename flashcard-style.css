@@ -371,7 +371,7 @@ main {
 }
 
 .file-showcase-bar.expanded~main {
-  margin-top: 370px;
+  margin-top: 200px;
 }
 
 /* =====================================================
@@ -941,7 +941,7 @@ border-color: var(--border-color);
   }
 
   .file-showcase-bar.expanded~main {
-    margin-top: 420px;
+    margin-top: 200px;
   }
 
   .file-item {
